@@ -36,8 +36,8 @@ const resetAnswer = () => {
   answerContainer.innerHTML = "";
 };
 
-const shakeButton = document.querySelector(".btn-primary");
-shakeButton.addEventListener("click", showAnswer);
+const askButton = document.querySelector(".btn-primary");
+askButton.addEventListener("click", showAnswer);
 
 const resetButton = document.querySelector(".btn-secondary");
 resetButton.addEventListener("click", resetAnswer);

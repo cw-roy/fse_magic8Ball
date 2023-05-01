@@ -5,6 +5,10 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-image: url('../images/eight-ball-1433173977mgp.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 .hero {
