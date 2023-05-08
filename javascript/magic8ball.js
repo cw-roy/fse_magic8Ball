@@ -34,10 +34,21 @@ const getAnswer = () => {
 const resetAnswer = () => {
   const answerContainer = document.getElementById("answer");
   answerContainer.innerHTML = "";
+  const questionInput = document.getElementById("question");
+  questionInput.value = "";
+  questionInput.focus();
 };
 
 const askButton = document.querySelector(".btn-primary");
-askButton.addEventListener("click", showAnswer);
+askButton.addEventListener("submit", showAnswer);
+
+const form = document.querySelector("form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  showAnswer();
+});
 
 const resetButton = document.querySelector(".btn-secondary");
 resetButton.addEventListener("click", resetAnswer);
+
+document.getElementById("question").focus();
